@@ -1,0 +1,47 @@
+# ============================================
+# Files to EXCLUDE from GitHub (not for production)
+# ============================================
+
+# Credentials & sensitive files
+credensial.txt
+*.env
+.env*
+config/env.php
+
+# Docker / local dev only
+docker-compose.yml
+docker-compose.*.yml
+Dockerfile
+.dockerignore
+
+# Vercel (not needed for cPanel)
+vercel.json
+api/
+
+# Documentation & planning (internal only)
+*.md
+!README.md
+
+# Logs & cache
+logs/*.log
+cache/*.cache
+cache/*.php
+
+# Uploaded files (managed on server directly)
+uploads/*
+!uploads/.gitkeep
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Scratch / temp files
+scratch/
+
+# Keep empty folders
+!logs/.gitkeep
+!cache/.gitkeep
